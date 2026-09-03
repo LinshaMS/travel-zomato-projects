@@ -1,0 +1,357 @@
+body{
+    margin:0;
+
+    font-family:Arial;
+}
+.main{
+    height:120vh;
+
+    background-image:url("https://www.traveldailymedia.com/assets/2023/07/shutterstock_1435375889.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    text-align:center;
+    color:white;
+    position:relative;
+    overflow:scroll;
+}
+
+.sub1{
+    padding-top:150px;
+}
+.sub1 h1{
+    font-size:90px;
+    font-style:italic;
+
+}
+.sub1 h2{
+    font-size:40px;
+     margin-top:20px;
+     margin-bottom:0;
+}
+.sub1 p{
+    font-size:20px;
+    width:800px;
+    margin:auto;
+    margin-top:20px;
+}
+
+
+.img1{
+    width:200px;
+    margin-top:40px;
+    margin-right:20px;
+}
+
+.img2{
+    width:200px;
+}
+
+.section2{
+    background:white;
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:100px;
+    position:relative;
+}
+
+.img3{
+    width:220px;
+    position:absolute;
+    left:70px;
+    top:200px;
+    animation:move1 3s infinite;
+}
+
+.img4{
+    width:220px;
+    position:absolute;
+    right:80px;
+    top:200px;
+    animation:move2 4s infinite;
+}
+
+.section2 h1{
+    font-size:65px;
+    color:red;
+}
+
+.section2 p{
+    font-size:28px;
+    color:gray;
+    width:700px;
+    margin:auto;
+    margin-top:20px;
+}
+
+.box{
+    width:85%;
+    height:160px;
+    background:white;
+    margin:auto;
+    margin-top:100px;
+    border-radius:25px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.smallbox{
+    text-align:center;
+}
+
+.smallbox h2{
+    margin:0;
+    font-size:50px;
+    color:#3d4a66;
+}
+
+.smallbox p{
+    margin-top:10px;
+    font-size:25px;
+    color:gray;
+    width:auto;
+}
+
+@keyframes move1{
+
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(20px);
+    }
+}
+
+@keyframes move2{
+
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(-20px);
+    }
+}
+
+.section3{
+    background:white;
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.section3 h1{
+    font-size:60px;
+
+    color:red;
+}
+
+.section3 p{
+    font-size:28px;
+    color:gray;
+
+    width:800px;
+    margin:auto;
+    margin-top:20px;
+}
+
+.cardmain{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:80px;
+}
+
+.card{
+    width:220px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.card img{
+    width:130px;
+}
+.card h3{
+    font-size:28px;
+    color:black;
+}
+
+.section4{
+    background:black;
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:100px;
+    color:white;
+}
+
+.section4 h1{
+    font-size:90px;
+    color:white;
+    margin:0;
+    
+}
+.section4 h2{
+    font-size:45px;
+    margin-top:30px;
+    color:rgb(238, 238, 117);
+}
+.section4 p{
+    font-size:25px;
+    color:lightgray;
+    margin-top:15px;
+}
+.goldboxmain{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:80px;
+}
+
+.goldbox{
+    width:300px;
+    background:black;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0px 0px 10px gray;
+}
+
+
+.goldbox img{
+    width:90px;
+}
+
+
+.goldbox h3{
+    font-size:35px;
+    color:rgb(230, 201, 40);
+    margin-top:25px;
+}
+
+.goldbox p{
+    font-size:22px;
+    color:lightgray;
+    width:300px;
+    margin:auto;
+    margin-top:15px;
+}
+
+.section5{
+    width:85%;
+    background:white;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    border-radius:30px;
+    padding-top:60px;
+    padding-bottom:60px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.left{
+    width:450px;
+}
+
+
+.left h1{
+    font-size:70px;
+    color:black;
+    margin:0;
+}
+
+
+.left p{
+    font-size:20px;
+
+    color:grey;
+    padding-right:50px;
+    margin-top:20px;
+    text-align:left;
+}
+
+
+
+.play{
+    width:150px;
+    margin-top:40px;
+    margin-right:20px;
+}
+
+
+.apple{
+    width:150px;
+}
+.phone-container{
+    position:relative;
+}
+
+.phone{
+    width:200px;
+}
+
+.qr{
+    position:absolute;
+    top:80px;
+    left:25px;
+    width:150px;
+}
+
+
+.lastsection{
+    background:black;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+
+.lastmain{
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+
+}
+
+.lastbox h1{
+    color:white;
+    font-size:60px;
+    font-style:italic;
+    margin:0;
+}
+
+
+.lastbox h2{
+    color:lightgray;
+    font-size:20px;
+    margin-bottom:20px;
+    height:40px
+}
+
+
+.lastbox ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+
+.lastbox li{
+    color:lightgray;
+    font-size:20px;
+    margin-top:15px;
+}
+
+
+.social{
+    width:30px;
+    margin-top:15px;
+    margin-right:10px;
+}
