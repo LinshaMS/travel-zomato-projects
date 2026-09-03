@@ -1,0 +1,205 @@
+body{
+    background:#061539;
+    font-family:Arial;
+    overflow-x:hidden;
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+    padding:20px;
+    background:#061539;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+}
+
+.nav-link:hover{
+    color:#00c3ff !important;
+}
+
+
+
+/* HOME */
+
+.home{
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.home-content{
+    text-align:center;
+    position:relative;
+}
+
+
+
+/* POINTS */
+
+.points{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
+
+/* MOON */
+
+.moon{
+    width:1000px;
+    margin-top:60px;
+}
+
+
+
+/* TREES */
+
+.trees{
+    width:100%;
+    margin-top:-720px;
+}
+
+
+
+/* GRASS */
+
+.grass{
+    width:100%;
+
+    margin-top:-120px;
+}
+
+
+/* PUMPKIN */
+
+.pumpkin{
+    width:220px;
+
+    margin-top:-40px;
+
+    animation:float 3s ease-in-out infinite;
+}
+
+/* TEXT */
+
+.subtitle{
+    font-size:35px;
+    color:black;
+    font-weight:bold;
+
+    margin-top:-430px;
+
+    font-family:Impact;
+}
+.home-title{
+    font-size:120px;
+
+    color:black;
+
+    font-family:Impact;
+
+    margin-top:-10px;
+}
+
+
+/* DESCRIPTION */
+
+.description{
+    width:700px;
+
+    margin:auto;
+
+    margin-top:70px;
+
+    font-size:18px;
+    font-style:initial;
+
+    line-height:30px;
+}
+
+
+/* BUTTON */
+
+.btn-primary{
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px 30px;
+
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:scale(1.1);
+}
+
+
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .moon{
+        width:340px;
+        margin-top:100px;
+    }
+
+    .trees{
+        margin-top:-360px;
+    }
+
+    .grass{
+        margin-top:-90px;
+    }
+
+    .pumpkin{
+        width:120px;
+        margin-top:-170px;
+    }
+
+    .subtitle{
+        font-size:20px;
+        margin-top:-240px;
+    }
+
+    .home-title{
+        font-size:50px;
+    }
+
+    .description{
+        width:90%;
+        font-size:14px;
+        line-height:24px;
+        margin-top:20px;
+    }
+
+}

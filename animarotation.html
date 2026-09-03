@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Different Animations</title>
+
+    <style>
+
+        body{
+            background:black;
+        }
+
+        .main{
+            display:flex;
+            gap:30px;
+            margin-top:100px;
+            margin-left:100px;
+        }
+
+        .box1{
+            width:80px;
+            height:80px;
+            background:red;
+
+            animation:moveRight 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveRight{
+
+            from{
+                transform:translateX(0);
+            }
+
+            to{
+                transform:translateX(100px);
+            }
+        }
+
+
+
+        .box2{
+            width:100px;
+            height:100px;
+            background:green;
+
+            animation:scaleBox 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes scaleBox{
+
+            from{
+                transform:scale(1);
+            }
+
+            to{
+                transform:scale(1.5);
+            }
+        }
+
+
+
+        .box3{
+            width:80px;
+            height:80px;
+            background:blue;
+
+            animation:rotateBox 2s linear infinite;
+        }
+
+        @keyframes rotateBox{
+
+            from{
+                transform:rotate(0deg);
+            }
+
+            to{
+                transform:rotate(360deg);
+            }
+        }
+ .box4{
+    background:orange;
+     width:80px;
+     height:80px;
+
+     animation:moveDiagonal 2s ease-in-out infinite alternate;
+     background: colorchange 2s ease-in-out infinite alternate;
+ }
+@keyframes moveDiagonal{
+    from{
+        background-color:orange;}
+        to{background-color:purple;}
+    }
+
+    .box5{
+        background:yellow;
+        width:80px;
+        animation:bounce 2s ease-in-out infinite alternate;
+    }
+    @keyframes bounce{
+        0%,100%{transform:translateY(0);}
+        50%{transform:translateY(-70px);}
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+
+    </div>
+
+</body>
+
+</html>

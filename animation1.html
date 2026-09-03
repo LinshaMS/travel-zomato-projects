@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Apple Falling</title>
+
+    <style>
+
+        .tree{
+
+            width:500px;
+
+            position:absolute;
+
+            left:320px;
+
+            top:120px;
+        }
+
+        .apple{
+
+            width:50px;
+
+            position:absolute;
+
+            left:600px;
+
+            top:150px;
+
+            animation:fall 5s infinite;
+        }
+
+        @keyframes fall{
+
+            from{
+
+                transform:translateY(0px);
+            }
+
+            to{
+
+                transform:translateY(600px);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <img src="tree.jpg" class="tree">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png"
+class="apple">
+
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Coffee</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+        }
+
+        .main{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding-left:50px;
+            padding-right:50px;
+            background:white;
+            overflow:hidden;
+        }
+        .sub1 h1{
+            font-size:20px;
+            font-style:initial;
+            color:rgb(81, 34, 34);
+        }
+        .sub1 p{
+            font-size:10px;
+            font-style:unset;
+            color:rgb(90, 42, 42);
+            margin-left:55px;
+            margin-top:-10px;
+        }
+
+        .sub2 ul{
+            display:flex;
+            gap:40px;
+            list-style:none;
+            color:rgb(90, 42, 42)
+        }
+        .sub2 li:hover{
+            color:rgb(81, 34, 34);
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:black;
+            color:white;
+            cursor:pointer;
+        }
+
+
+        .container{
+            height:600px;
+            background-image:url("https://images5.alphacoders.com/905/905439.jpg");
+            background-size:cover;
+            background-position:center;
+            color:white;
+        }
+
+
+        .sub3{
+            padding-top:70px;
+            padding-left:80px;
+            width:400px;
+        }
+
+
+        .sub3 h1{
+            font-size:50px;
+            color:white;
+        }
+
+
+        .sub3 h2{
+            font-size:35px;
+            width:700px;
+            color:lightgray;
+            margin-top:-30px;
+        }
+
+
+        .sub3 p{
+            font-size:20px;
+            width:500px;
+        }
+
+
+        .sub3 button{
+            padding:10px 20px;
+            background:brown;
+            color:lightyellow;
+            border:none;
+            margin-top:20px;
+            
+            
+        }
+         h1{
+            font-style:initial;
+            color:rgb(99, 70, 70);
+            margin-left:50px;
+         }
+
+
+     
+
+        .main2{
+            display:flex;
+            justify-content:space-around;
+            padding-top:50px;
+            padding-bottom:50px;
+        }
+        .box1{
+            width:200px;
+        }
+        .box1 h2{
+            font-style:initial;
+            color:rgb(99, 70, 70);
+        }
+
+
+        .head{
+            margin-left:60px;
+        }
+
+
+        .container2{
+            display:flex;
+            flex-wrap:wrap;
+            gap:30px;
+            justify-content:center;
+            padding-bottom:50px;
+        }
+
+
+        .card{
+            width:250px;
+            border:1px solid lightgray;
+            padding:10px;
+            text-align:center;
+        }
+
+
+        .card img{
+            width:100%;
+            height:200px;
+            animation:slide 4s linear infinite;
+        }
+
+
+        .card button{
+            background:brown;
+            color:white;
+            border:none;
+            padding:10px 20px;
+        }
+
+
+        .footer{
+            background:gray;
+            color:white;
+            display:flex;
+            justify-content:space-around;
+            padding-top:50px;
+            padding-bottom:50px;
+        }
+
+
+        .foot1{
+            width:250px;
+        }
+
+
+        .foot1 input{
+            width:200px;
+            padding:10px;
+        }
+
+
+        .foot1 button{
+            padding:10px 20px;
+            background:brown;
+            color:white;
+            border:none;
+        }
+        .icon{
+             width:30px;
+            vertical-align:middle;
+            margin-right:10px;
+}
+        @keyframes slide{
+
+            from{
+                transform:translateX(0);
+            }
+
+            to{
+                transform:translateX(20px);
+            }
+        }
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="sub1">
+            <h1>Ubuntu</h1>
+            <p>Coffee lab</p>
+
+        </div>
+
+        <div class="sub2">
+            <ul>
+
+                <li>Home</li>
+                <li>Coffee</li>
+                <li>Equipment</li>
+                <li>Gifts</li>
+                <li>Knowledge</li>
+                <li>About Us</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="sub3">
+
+            <h1>KIWI COFFEE REVOLUTION</h1>
+            <h2>LOREM IPSUM DOLOR - SIT AMET</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <button>READ MORE</button>
+
+        </div>
+
+    </div>
+
+    <div class="main2">
+
+        <div class="box1">
+            <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" class="icon">
+            <h2>Espresso Coffee</h2>
+            <p>
+                Lorem Ipsum is simply dummy text.
+            </p>
+        </div>
+        <div class="box1">
+            <h2>Bewley's Coffee</h2>
+            <p>
+                Lorem Ipsum is simply dummy text.
+            </p>
+
+        </div>
+
+
+        <div class="box1">
+            <h2>Vittoria Coffee</h2>
+            <p>
+                Lorem Ipsum is simply dummy text.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h1>Featured Products</h1>
+
+    <div class="container2">
+
+        <div class="card">
+
+            <img src="https://tse2.mm.bing.net/th/id/OIP.Jzye9qPDNzOmQESSIfbr1wHaHa?pid=Api&P=0&h=180">
+            <h3>Bean Cream Coffee</h3>
+
+            <p>₹549</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500">
+
+            <h3>Black Forest Coffee</h3>
+
+            <p>₹549</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500">
+
+            <h3>Normal Coffee</h3>
+
+            <p>₹549</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=500">
+
+            <h3>Hot Coffee</h3>
+
+            <p>₹549</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+
+        <div class="foot1">
+
+            <h2>Contact Us</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="icon">
+            <p>34 New City 1234</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="icon">
+            <p>Call Now</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="icon">
+            <p>Mail Now</p>
+
+        </div>
+
+        <div class="foot1">
+
+            <h2>Facebook</h2>
+            <p>Lorem ipsum text</p>
+            <p>Lorem ipsum text</p>
+
+        </div>
+
+
+
+        <div class="foot1">
+
+            <h2>Twitter</h2>
+            <p>Lorem ipsum text</p>
+            <p>Lorem ipsum text</p>
+
+        </div>
+
+
+        <div class="foot1">
+
+            <h2>News Letter</h2>
+            <p>Subscribe to our newsletter for the latest updates and offers.</p>
+            <input type="text" placeholder="Enter Name">
+            <br><br>
+
+            <input type="text" placeholder="Enter Email">
+            <br><br>
+
+            <button>Sign Up</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

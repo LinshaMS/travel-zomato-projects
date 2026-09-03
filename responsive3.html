@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+
+            background:white;
+        }
+        /* NAVBAR */
+        .navbar{
+            background:black;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px;
+        }
+        .logo{
+            font-size:30px;
+        }
+        ul{
+            display:flex;
+            gap:30px;
+            list-style:none;
+        }
+        ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.5s;
+        }
+        ul li a:hover{
+            color:skyblue;
+        }
+
+        /* MAIN SECTION */
+
+        .main{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:80px;
+            gap:50px;
+            overflow:hidden;
+        
+
+        }
+
+
+        /* LEFT SIDE */
+
+        .sub1{
+            width:500px;
+        }
+
+
+        .sub1 h1{
+            font-size:50px;
+            margin-bottom:20px;
+        }
+
+
+        .sub1 p{
+            font-size:20px;
+            color:gray;
+            margin-bottom:30px;
+        }
+
+
+        .sub1 button{
+            padding:15px 30px;
+            background:#2d8cff;
+            color:white;
+            border:none;
+            
+            cursor:pointer;
+            transition:0.5s;
+        }
+
+
+        .sub1 button:hover{
+            background:darkblue;
+            transform:scale(1.1);
+        }
+
+
+
+        /* RIGHT SIDE */
+
+        .sub2 img{
+            width:400px;
+            border-radius:20px;
+            transition:0.5s;
+            animation:move 3s ease-in-out infinite;
+        }
+
+
+.main2{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+    flex-wrap:wrap;
+    overflow:hidden;
+}
+
+
+.card{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.5s;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#f0f8ff;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    border-radius:10px;
+}
+
+
+.card button{
+    background:skyblue;
+    border:none;
+    padding:10px 20px;
+}
+.card button:hover{
+    background:darkblue;
+}
+
+    @media(max-width:768px){
+            .navbar{
+                flex-direction:column;
+                text-align:center;
+            }
+            ul{
+                flex-direction:column;
+                padding:0;
+            }
+            .main{
+                flex-direction:column;
+                text-align:center;
+                padding:40px;
+            }
+            .sub1{
+                width:100%;
+            }
+            .sub1 h1{
+                font-size:40px;
+            }
+            .sub2 img{
+                width:100%;
+            }
+            .main2{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+        @keyframes move{
+            0%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-20px);
+            }
+            100%{
+                transform:translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            TechStore
+        </div>
+        <ul>
+
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sub1">
+            <h1>
+                Smart Watch Pro</h1>
+            <p>
+                Stay connected, track your fitness, and manage your daily tasks with the all-new Smart Watch Pro
+            </p>
+            <button>
+                Buy Now
+            </button>
+        </div>
+
+        <div class="sub2">
+            <img src="https://i.pinimg.com/736x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg">
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.yvlfWEw3Ot9vGHX-HyvvJwHaGL?pid=Api&P=0&h=180">
+            <h2>Smart Watch</h2>
+            <h3>$99.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://brain-images-ssl.cdn.dixons.com/8/2/10207228/u_10207228.jpg">
+            <h2>Headphones</h2>
+            <h3>$79</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://files.idyllic.app/files/static/273113">
+            <h2>Smartphone</h2>
+            <h3>$499</h3>
+            <button>Add to Cart</button>
+
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.66eoGNK-NxBqmbMWOrF3BgHaEK?pid=Api&P=0&h=180">
+            <h2>Laptop</h2>
+            <h3>$899</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://pngimg.com/uploads/tablet/tablet_PNG8600.png">
+            <h2>Tablet</h2>
+            <h3>$299</h3>
+            <button>Add to Cart</button>
+    </div>
+    </div>
+</body>
+</html>

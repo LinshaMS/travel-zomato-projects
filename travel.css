@@ -1,0 +1,81 @@
+.navbar-brand{
+    font-size: 30px;
+    font-weight:bold;
+    font-style:italic;
+    color:white;
+}
+
+.carousel-img{
+height:550px;
+
+}
+
+.carousel-caption{
+background-color:rgba(0,0,0,0.5);
+padding:15px;
+border-radius:10px;
+}
+
+.card{
+transition:0.3s;
+}
+
+
+.card-body{
+    display:flex;
+    flex-direction:column;
+    border-radius:30px;
+
+}
+.container h2{
+    background-color:rgba(109, 162, 118, 0.5);
+    border-radius:10px;
+}
+
+.card-body h4{
+    background-color:none;
+}
+
+.card-body h5{
+    margin-bottom:10px;
+    justify-content:center;
+}
+
+.card-body p{
+    margin-bottom:10px;
+    justify-content:center;
+}
+
+.card-body .btn{
+    margin-top:auto;
+}
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 4px 15px;
+}
+
+.gallery-img{
+height:250px;
+width:100%;
+
+border-radius:20px;
+transition:0.3s;
+}
+
+.gallery-img:hover{
+transform:scale(1.05);
+}
+
+.btn{
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+    .carousel-img{
+        height:300px;
+    }
+}

@@ -1,0 +1,197 @@
+body{
+    font-family:Arial;
+}
+
+
+
+/* NAVBAR */
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:black;
+}
+
+.logo span{
+    color:olive;
+}
+
+.nav-link{
+    margin-left:20px;
+    color:black !important;
+}
+
+.nav-link:hover{
+    color:olive !important;
+}
+
+
+
+/* HOME */
+
+.home{
+    position:relative;
+    margin-bottom:80px;
+}
+
+
+/* CAROUSEL IMAGE */
+
+.slider-img{
+    height:600px;
+    object-fit:cover;
+}
+
+
+/* TEXT BOX */
+
+.home-text{
+    position:absolute;
+
+    bottom:-55px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    text-align:center;
+}
+
+.home-text h1{
+
+    background:#7a8f1d;
+
+    color:white;
+
+    padding:18px 45px;
+
+    border-radius:15px;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    display:inline-block;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 0px;
+}
+
+.about h5{
+    color:olive;
+    font-weight:bold;
+}
+
+.about h1{
+    font-size:45px;
+    font-weight:bold;
+    margin:15px 0;
+
+    color:#777;
+}
+
+.about p{
+    line-height:30px;
+    margin-bottom:20px;
+}
+
+.about-img{
+    width:100%;
+    max-width:280px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 0;
+}
+
+.services h5{
+    color:olive;
+    font-weight:bold;
+}
+
+.service-title{
+    font-size:45px;
+    font-weight:bold;
+
+    color:#777;
+
+    margin-bottom:40px;
+}
+
+.service-card{
+    border:none;
+    box-shadow:0 0 10px lightgray;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.card-body h3{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.card-body p{
+    line-height:28px;
+}
+
+
+
+/* BUTTON */
+
+.btn-dark{
+    margin-top:10px;
+    padding:10px 25px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .slider-img{
+        height:400px;
+    }
+
+    .home-text h1{
+        font-size:30px;
+        padding:15px 25px;
+    }
+
+    .about{
+        text-align:center;
+    }
+
+    .about h1{
+        font-size:35px;
+    }
+
+    .service-title{
+        font-size:35px;
+    }
+
+    .about-img{
+        width:100%;
+        margin-top:10px;
+    }
+
+}

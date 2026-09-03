@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Grid Example</title>
+
+    <style>
+
+        *{
+
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+            font-family:Times New Roman, Times, serif;
+        }
+
+        .container{
+
+            display:grid;
+
+            grid-template-areas:
+            "sidebar header"
+            "sidebar content";
+
+            grid-template-columns:250px 1fr;
+
+            grid-template-rows:80px 1fr;
+
+            height:100px;
+        }
+
+        .sidebar{
+
+            grid-area:sidebar;
+
+            background:black;
+
+            color:white;
+
+            padding:20px;
+        }
+
+        .sidebar h1{
+
+            margin-bottom:20px;
+        }
+
+        .sidebar p{
+
+            margin-bottom:10px;
+        }
+
+        .header{
+
+            grid-area:header;
+
+            background:rgb(60, 185, 226);
+
+            color:rgb(255, 255, 255);
+
+            padding:20px;
+        }
+
+        .content{
+
+            grid-area:content;
+
+            display:grid;
+
+            grid-template-columns:repeat(3,1fr);
+
+            gap:20px;
+
+            padding:20px;
+
+            background:white;
+        }
+
+        .card{
+
+            background:white;
+
+            border-radius:15px;
+
+            height:250px;
+
+            text-align:center;
+
+            padding-top:80px;
+
+            box-shadow:2px 2px 5px lightgray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h1>Dashboard</h1>
+
+            <p>Home</p>
+
+            <p>Users</p>
+
+            <p>Settings</p>
+
+        </div>
+
+        <div class="header">
+
+            <h1>Admin Panel</h1>
+
+        </div>
+
+        <div class="content">
+
+            <div class="card">
+                Users
+            </div>
+
+            <div class="card">
+                Orders
+            </div>
+
+            <div class="card">
+                Revenue
+            </div>
+
+            <div class="card">
+                Products
+            </div>
+
+            <div class="card">
+                Reports
+            </div>
+
+            <div class="card">
+                Messages
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

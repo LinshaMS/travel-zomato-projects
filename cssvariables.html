@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+
+<body>
+
+<style>
+
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+    --new-color: yellow;
+}
+
+body{
+    font-size: var(--font-size);
+    color: var(--primary-color);
+}
+
+h1{
+    color: var(--secondary-color);
+}
+
+
+p{
+    color: var(--new-color);
+}
+
+</style>
+<h1>Heading 1</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>

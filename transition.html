@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Different Transitions</title>
+
+    <style>
+
+        body{
+            background:black;
+        }
+
+        .main{
+            display:flex;
+
+            gap:30px;
+
+            margin-top:100px;
+
+            margin-left:100px;
+        }
+
+
+
+        /* BOX 1 */
+
+        .box1{
+            width:80px;
+
+            height:80px;
+
+            background:red;
+
+            transition:1s;
+        }
+
+        .box1:hover{
+            transform:translateX(100px);
+        }
+
+
+
+        /* BOX 2 */
+
+        .box2{
+            width:100px;
+
+            height:100px;
+
+            background:green;
+
+            transition:1s;
+        }
+
+        .box2:hover{
+            transform:scale(1.5);
+        }
+
+
+
+        /* BOX 3 */
+
+        .box3{
+            width:80px;
+
+            height:80px;
+
+            background:blue;
+
+            transition:1s;
+        }
+
+        .box3:hover{
+            transform:rotate(360deg);
+        }
+
+
+
+        /* BOX 4 */
+
+        .box4{
+            width:80px;
+
+            height:80px;
+
+            background:orange;
+
+            transition:1s;
+        }
+
+        .box4:hover{
+            background:purple;
+        }
+
+
+
+        /* BOX 5 */
+
+        .box5{
+            width:80px;
+
+            height:80px;
+
+            background:yellow;
+
+            transition:1s;
+        }
+
+        .box5:hover{
+            transform:translateY(-50px);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+
+        <div class="box3"></div>
+
+        <div class="box4"></div>
+
+        <div class="box5"></div>
+
+    </div>
+
+</body>
+
+</html>

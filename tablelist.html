@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Table Design</title>
+
+    <style>
+
+        body{
+            margin:0;
+
+            font-family:sans-serif;
+
+            background:linear-gradient(to right,skyblue,purple);
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            height:100vh;
+        }
+
+
+        table{
+            width:800px;
+
+            background:white;
+
+            border-collapse:collapse;
+
+            border-radius:20px;
+
+            overflow:hidden;
+        }
+
+
+        th{
+            background:#5b4bdb;
+
+            color:white;
+
+            padding:20px;
+
+            font-size:20px;
+        }
+
+
+        td{
+            padding:20px;
+
+            text-align:center;
+
+            border-bottom:1px solid lightgray;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: blueviolet;
+
+
+        }
+
+        tbody tr:hover{
+            background-color:white;
+        }
+
+
+        tr:hover{
+            background:#f3f3f3;
+        }
+
+
+        ul{
+            margin:0;
+
+            padding-left:10px;
+             list-style-type:square;
+         
+        }
+
+
+        li{
+            margin-top:10px;
+        }
+
+
+        .active{
+            background:green;
+
+            color:white;
+
+            padding:10px 20px;
+
+            border-radius:20px;
+        }
+
+
+        .pending{
+            background:orange;
+
+            color:white;
+
+            padding:10px 20px;
+
+            border-radius:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <!-- HEADING ROW -->
+
+        <tr>
+
+            <th>NAME</th>
+
+            <th>SKILLS</th>
+
+            <th>STATUS</th>
+
+        </tr>
+
+
+
+        <!-- ROW 1 -->
+
+        <tr>
+
+            <td>Ansal</td>
+
+            <td>
+
+                <ul>
+
+                    <li>HTML</li>
+
+                    <li>CSS</li>
+
+                    <li>JavaScript</li>
+
+                </ul>
+
+            </td>
+
+            <td>
+
+                <span class="active">Active</span>
+
+            </td>
+
+        </tr>
+
+
+
+        <!-- ROW 2 -->
+
+        <tr>
+
+            <td>Rahul</td>
+
+            <td>
+
+                <ul>
+
+                    <li>React</li>
+
+                    <li>Node.js</li>
+
+                    <li>MongoDB</li>
+
+                </ul>
+
+            </td>
+
+            <td>
+
+                <span class="pending">Pending</span>
+
+            </td>
+
+        </tr>
+
+
+
+        <!-- ROW 3 -->
+
+        <tr>
+
+            <td>Meera</td>
+
+            <td>
+
+                <ul>
+
+                    <li>Python</li>
+
+                    <li>Django</li>
+
+                    <li>MySQL</li>
+
+                </ul>
+
+            </td>
+
+            <td>
+
+                <span class="active">Active</span>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

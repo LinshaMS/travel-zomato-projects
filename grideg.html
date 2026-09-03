@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Grid Example</title>
+
+    <style>
+
+        .main{
+
+            width:500px;
+
+            margin:auto;
+
+            display:grid;
+
+            gap:10px;
+
+            grid-template-columns:150px 150px 150px;
+
+            grid-template-rows:145px 145px 145px;
+
+            grid-template-areas:
+            "one two three"
+            "one four five"
+            "six six six";
+        }
+
+        .sub1{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:one;
+
+            height:300px;
+        }
+
+        .sub2{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:two;
+
+            height:145px;
+        }
+
+        .sub3{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:three;
+
+            height:145px;
+        }
+
+        .sub4{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:four;
+
+            height:145px;
+        }
+
+        .sub5{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:five;
+
+            height:145px;
+        }
+
+        .sub6{
+
+            background:blueviolet;
+
+            color:black;
+
+            grid-area:six;
+
+            height:145px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="sub1">
+            1
+        </div>
+
+        <div class="sub2">
+            2
+        </div>
+
+        <div class="sub3">
+            3
+        </div>
+
+        <div class="sub4">
+            4
+        </div>
+
+        <div class="sub5">
+            5
+        </div>
+
+        <div class="sub6">
+            6
+        </div>
+
+    </div>
+
+</body>
+
+</html>

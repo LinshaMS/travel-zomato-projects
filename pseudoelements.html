@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pseudo-elements</title>
+        <style>
+            h5{
+                color:brown;
+            }
+            h5::before{
+                content:"before";
+                color:green;
+            }
+            h5::after{
+                content:"after";
+                color:orange;
+            }
+            h5::first-letter{
+                color:red;
+                font-size:30px;
+            }
+             h5::first-line{
+                color:purple;
+                font-size:20px;
+                font-weight:bolder;
+
+            }
+            /* h5::selection{
+                background-color:yellow;
+                color:black;
+            }*/
+        </style>
+    </head>
+    <body>
+        <h5>hello world</h5>
+    </body>
+</html>
