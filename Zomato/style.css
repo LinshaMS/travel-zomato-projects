@@ -3,10 +3,12 @@ body{
 
     font-family:Arial;
 }
+
 .main{
     height:120vh;
 
-    background-image:url("https://www.traveldailymedia.com/assets/2023/07/shutterstock_1435375889.jpg");
+    background-image:url("./zomato-intro.jpg");
+
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
